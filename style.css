@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(
+        90deg,
+        rgb(197, 191, 191) 25%,
+        rgb(247, 242, 242) 73%);
+}
+
+/*ENCABEZADO*/
+
+
+.encabezado header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+.encabezado .nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+
+.encabezado .nav.active{
+    background-color: aquamarine;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.encabezado .nav.active .logo,
+.encabezado .nav.active a {
+    color: black;
+}
+
+.encabezado .nav.active a:hover{
+    background: linear-gradient(
+        90deg,
+        rgb(0, 129, 119) 25%,
+        rgb(0, 78, 65) 73%);
+    color: rgb(255, 255, 255);
+}
+
+.encabezado .logo{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 100px;
+    padding-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.encabezado .menu {
+    display: flex;
+}
+
+.encabezado .menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+.encabezado .menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.encabezado .menu li a:hover{
+    padding: 5px 10px;
+    background: linear-gradient(
+        90deg,
+        rgb(0, 185, 170) 25%,
+        rgb(0, 255, 213) 73%);
+    color: black;
+    border-radius: 15px;
+}
+
+
+
+.encabezado .Polyletras {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 250px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*ENCABEZADO*/
+
+/*CONTENIDO*/
+
+
+
+body .Resumen{
+    background-color: rgb(149, 247, 247);
+    margin: 50px 150px 50px 150px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+body .Resumen h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(197, 255, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+body .Resumen h2{
+    padding: 30px 150px;
+    text-align: center;
+}
+
+
+
+
+
+
+body .Introduccion {
+    background-color: rgb(169, 209, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    margin: 50px 150px 50px 150px;
+}
+
+body .Introduccion h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(197, 255, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+body .Introduccion h2{
+    font-size: 120%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+body .Objetivos ul{
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 300px;
+}
+
+body .Objetivos li{
+    font-size: 150%;
+    color: blue;
+}
+
+body .Objetivos {
+    background-color: rgb(159, 204, 255);
+    padding-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    margin: 50px 150px 50px 150px;
+}
+
+body .Objetivos h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: rgb(202, 227, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+body .Objetivos h2{
+    padding: 30px 50px 30px 20px;
+    color:rgb(1, 0, 56)
+}
+body .Objetivos h3{
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+body .Objetivos .sep h2{
+    background-color: rgb(1, 24, 128);
+    padding: 5px 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+body .Metodologia{
+    background-color: rgb(134, 190, 255);
+    margin: 50px 150px 50px 150px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+body .Metodologia h1{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(173, 211, 255);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+body .Metodologia h2{
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    background-color: rgb(1, 24, 128);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+body .Metodologia h3{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgb(129, 188, 255);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+}
+
+body .Metodologia h4{
+    padding-left: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+body .Caracteristicas {
+    background-color: rgb(4, 35, 70);
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    margin: 50px 150px 50px 150px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+
+}
+
+body .Caracteristicas h1{
+    background-color: rgb(30, 89, 156);
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    color: blanchedalmond;
+}
+
+body .Caracteristicas h2{
+    padding-left: 15px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(30, 89, 156);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+body .Caracteristicas h3{
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(4, 35, 70);
+    color: rgb(255, 255, 255);
+}
+
+body .Caracteristicas h4{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+body .Componentes {
+    background-color: rgb(0, 119, 255);
+    color: rgb(31, 28, 28);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin: 50px 150px 50px 150px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+
+}
+
+body .Componentes h1{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(0, 50, 107);
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+}
+
+body .Componentes h2{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 50, 107);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    text-align: center;
+}
+
+body .Componentes h3{
+    padding: 15px 150px;
+    color: rgb(255, 255, 255);
+}
+
+body .Requisitos{
+    background-color: rgb(0, 97, 207);
+    color: rgb(238, 238, 238);
+    padding-bottom: 20px;
+    margin: 50px 150px 50px 150px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;   
+}
+
+body .Requisitos h1{
+    background-color: rgb(0, 44, 95);
+    text-align: center;
+    padding: 20px 0px 20px 0px;    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;  
+}
+
+body .Requisitos h2{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 50, 107);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px; 
+    text-align: center;
+}
+
+body .Requisitos h3{
+    padding: 10px 350px;
+}
+
+
+
+body .especificaciones {
+    background-color: rgb(0, 75, 160);
+    color: rgb(192, 185, 185);
+    padding-bottom: 20px;
+    margin: 50px 150px 50px 150px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;  
+}
+
+body .especificaciones h1{
+    text-align: center;
+    background-color: rgb(0, 40, 87);
+    padding: 20px 0px 20px 0px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;       
+}
+
+body .especificaciones h2{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: rgb(0, 40, 87);
+    border-radius: 50px;    
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+body .especificaciones h3{
+    padding: 10px 250px;
+}
+
+body .especificaciones h4{
+    padding: 10px 350px;
+}
+
+
+
+body .Diagrama {
+    background-color: rgb(0, 54, 116);
+    color: rgb(192, 185, 185);
+    padding-bottom: 20px;
+    margin: 50px 150px 50px 150px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px; 
+}
+
+body .Diagrama h1{
+    background-color: rgb(0, 25, 53);
+    text-align: center;
+    padding: 20px 0px 20px 0px;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;    
+}
+
+body .Diagrama h2{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(226, 226, 226);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    background-color: rgb(6, 25, 48);
+    text-align: center;
+    
+}
+
+body .Diagrama h3{
+    padding: 10px 250px;
+}
+
+
+body .interfaz {
+    background-color: rgb(0, 42, 90);
+    color: rgb(192, 185, 185);
+    padding-bottom: 20px;
+    margin: 50px 150px 50px 150px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px; 
+}
+
+body .interfaz h1{
+    text-align: center;
+    padding: 20px 0px 20px 0px;      
+}
+
+body .ciclo {
+    background-color: rgb(0, 25, 54);
+    color: rgb(192, 185, 185);
+    padding-bottom: 20px;
+    margin: 50px 150px 50px 150px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;  
+}
+
+body .ciclo h1{
+    text-align: center;
+    background-color: rgb(10, 27, 46);
+    padding: 20px 0px 20px 0px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;       
+}
+
+body .ciclo h2{
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(226, 226, 226);
+}
+
+body .ciclo h3{
+    padding-left: 30px;
+    color: rgb(226, 226, 226);
+}
+
+body .ciclo h4{
+    padding: 20px 75px;
+}
+
+body .Manual {
+    text-align: center;
+}
+
+
+.imagenn {
+    padding-left: 150px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*FOOTER*/
+.parteabajo .footer {
+    position: relative;
+    width: 100%;
+    background: #000000;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .parteabajo .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+  }
+  
+  .parteabajo .icon-elem {
+    list-style: none;
+  }
+  
+  .parteabajo .icon {
+    color: white;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+  }
+  
+  .parteabajo .icon:hover {
+    transform: translateY(-10px);
+  }
+  
+  .parteabajo .menu2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .parteabajo .menu-elem {
+    list-style: none;
+  }
+  .parteabajo .menu-icon {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  
+
+  .parteabajo .text {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+/*FOOTER*/
